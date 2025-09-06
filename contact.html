@@ -63,10 +63,27 @@
 	</p>
 	</article>
 
-						<!-- Post -->
-							<section class="post">
-								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmTCsHzux5zueQ5iSWRBikbBq9sQQIcdC2A7eIxt2iEPXAeA/viewform?embedded=true" width="100%" height="718" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-							</section>
+						<!-- Contact Form with Privacy-First Loading -->
+						<section class="post">
+							<div id="form-consent">
+								<p>This form is hosted externally by Google. By clicking the button below, you agree to load content from Google and accept their <a href="https://policies.google.com/privacy" target="_blank">privacy policy</a>.</p>
+								<button id="load-form" class="button primary">Load Contact Form</button>
+							</div>
+							<iframe id="google-form" style="display: none;" width="100%" height="718" frameborder="0" marginheight="0" marginwidth="0" data-src="https://docs.google.com/forms/d/e/1FAIpQLScmTCsHzux5zueQ5iSWRBikbBq9sQQIcdC2A7eIxt2iEPXAeA/viewform?embedded=true"></iframe>
+							<script>
+								document.addEventListener('DOMContentLoaded', function() {
+									const formConsent = document.getElementById('form-consent');
+									const googleForm = document.getElementById('google-form');
+									const loadButton = document.getElementById('load-form');
+
+									loadButton.addEventListener('click', function() {
+										googleForm.src = googleForm.dataset.src;
+										googleForm.style.display = 'block';
+										formConsent.style.display = 'none';
+									});
+								});
+							</script>
+						</section>
 						<!-- Footer Posts -->
 						<article class="post featured">
 							<header class="major">
@@ -83,9 +100,6 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-
-						</section>
 						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
