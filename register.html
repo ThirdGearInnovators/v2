@@ -52,11 +52,34 @@
 					
 					<div class="box">
 						<div class="row">
-							<div class="col-12">
-								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVpDcPvteE3Qt4Kyv9vE-_D3BfrGizTIFYaX6M_m2HczpYdA/viewform?embedded=true" width="100%" height="1304" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<div class="col-12" id="form-container">
+								<div id="form-consent" style="text-align: center; padding: 2em;">
+									<h3>Registration Form</h3>
+									<p>By clicking the button below, you'll be taken to our secure Google Form to complete your registration.</p>
+									<button id="load-form" class="button primary" style="margin-top: 1em;">Load Registration Form</button>
+									<p style="font-size: 0.8em; margin-top: 1em; color: #666;">We respect your privacy. The form will only load after you give consent.</p>
+								</div>
+								<iframe id="google-form" style="display: none;" width="100%" height="1304" frameborder="0" marginheight="0" marginwidth="0" data-src="https://docs.google.com/forms/d/e/1FAIpQLSeVpDcPvteE3Qt4Kyv9vE-_D3BfrGizTIFYaX6M_m2HczpYdA/viewform?embedded=true">Loading…</iframe>
 							</div>
 						</div>
 					</div>
+					<script>
+						document.getElementById('load-form').addEventListener('click', function() {
+							const iframe = document.getElementById('google-form');
+							const container = document.getElementById('form-container');
+							const consent = document.getElementById('form-consent');
+							
+							// Load the form
+							iframe.src = iframe.dataset.src;
+							
+							// Show the iframe and hide the consent
+							iframe.style.display = 'block';
+							consent.style.display = 'none';
+							
+							// Scroll to the form
+							iframe.scrollIntoView({ behavior: 'smooth' });
+						});
+					</script>
 
 					<div class="box alt">
 						<div class="row gtr-50 gtr-uniform">
