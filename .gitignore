@@ -3,9 +3,6 @@
 *.py
 __pycache__/
 
-# Link checker script
-v2/check_links.py
-
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -23,3 +20,8 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+# Allow README.md
+!.gitignore
+!README.md
+# Ignore other markdown files
+*.md
