@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /*?*
+
+Sitemap: https://thirdgearinnovators.org/sitemap.xml
