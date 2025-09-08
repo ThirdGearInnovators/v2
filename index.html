@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
-
-<html>
+<html lang="en">
 	<head>
 		<title>Third Gear Innovators | Hands-On STEM Education Through Kit Cars</title>
-		<meta name="Description" content="Discover Third Gear Innovators, a nonprofit dedicated to inspiring the next generation through hands-on STEM learning focused on the mechanics and engineering of kit cars." />
+		<meta name="description" content="Third Gear Innovators is a nonprofit bringing hands-on STEM experiences to kids ages 6-13. Join us in inspiring the next generation of innovators through hands-on learning with kit cars and engineering." />
+		<meta name="keywords" content="STEM education, nonprofit, kit cars, engineering, hands-on learning, kids programs, science technology engineering math, youth education, Third Gear Innovators" />
+		<meta name="author" content="Third Gear Innovators" />
+		<meta name="robots" content="index, follow" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,6 +26,8 @@
   gtag('config', 'G-936D628E55');
 </script>
 	<body class="is-preload">
+		<!-- Skip to main content link for keyboard users -->
+		<a class="skip-link" href="#main">Skip to main content</a>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -32,7 +36,7 @@
 				
 
 					<div id="intro">
-						<img src="images/logo.png" width="5%"" alt="logo" style="opacity: 40%;"/>
+						<img src="images/logo.png" width="5%" alt="Third Gear Innovators logo" style="opacity: 40%;" />
 						<h1>Third Gear Innovators</h1>
 						<p>a 501(c)(3) Organization dedicated to providing hands-on STEM education with a focus on the exciting world of kit cars and engineering.</p>
 						<ul class="actions">
@@ -64,7 +68,7 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" role="main" aria-label="Main content">
 
 						<!-- Featured Post -->
 							<article class="post featured">
@@ -162,31 +166,71 @@
 			</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/NonprofitOrganization">
 						<section class="split contact">
-							<section class="alt">
+							<section class="alt" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 								<h3>Location</h3>
-								<p>Carnation, WA 98014</p>
+								<p itemprop="addressLocality">Carnation</p>
+								<meta itemprop="addressRegion" content="WA">
+								<meta itemprop="postalCode" content="98014">
+								<meta itemprop="addressCountry" content="US">
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="mailto:board@innovate3.org">board@innovate3.org</a></p>
+								<p><a href="mailto:board@innovate3.org" itemprop="email">board@innovate3.org</a></p>
 							</section>
 							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.youtube.com/channel/UCUgUU2q5v2UQAETQw01RhQQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-									<li><a href="https://www.instagram.com/thirdgearinnovators/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/ThirdGearInnovators/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<h3>Connect With Us</h3>
+								<ul class="icons alt" aria-label="Social media links">
+									<li><a href="https://www.youtube.com/channel/UCUgUU2q5v2UQAETQw01RhQQ" class="icon brands alt fa-youtube" aria-label="Visit our YouTube channel"><span class="label">YouTube</span></a></li>
+									<li><a href="https://www.instagram.com/thirdgearinnovators/" class="icon brands alt fa-instagram" aria-label="Follow us on Instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/ThirdGearInnovators/" class="icon brands alt fa-github" aria-label="View our GitHub profile"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
 					</footer>
 
 				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Third Gear Innovators</li></ul>
+					<div id="copyright" role="contentinfo">
+						<ul><li>&copy; <span itemprop="copyrightYear">2024</span> <span itemprop="name">Third Gear Innovators</span>. All rights reserved.</li></ul>
 					</div>
+
+				<!-- Schema.org JSON-LD -->
+				<script type="application/ld+json">
+				{
+				  "@context": "https://schema.org",
+				  "@type": "NGO",
+				  "name": "Third Gear Innovators",
+				  "legalName": "Third Gear Innovators",
+				  "url": "https://thirdgearinnovators.org",
+				  "logo": "https://thirdgearinnovators.org/images/logo.png",
+				  "foundingDate": "2023",
+				  "founders": [
+				    {
+				      "@type": "Person",
+				      "name": "Board of Directors"
+				    }
+				  ],
+				  "address": {
+				    "@type": "PostalAddress",
+				    "addressLocality": "Carnation",
+				    "addressRegion": "WA",
+				    "postalCode": "98014",
+				    "addressCountry": "US"
+				  },
+				  "contactPoint": {
+				    "@type": "ContactPoint",
+				    "contactType": "customer service",
+				    "email": "board@innovate3.org",
+				    "url": "https://thirdgearinnovators.org/contact"
+				  },
+				  "sameAs": [
+				    "https://www.youtube.com/channel/UCUgUU2q5v2UQAETQw01RhQQ",
+				    "https://www.instagram.com/thirdgearinnovators/",
+				    "https://github.com/ThirdGearInnovators/"
+				  ]
+				}
+				</script>
 
 			</div>
 

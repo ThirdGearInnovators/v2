@@ -1,0 +1,28 @@
+# robots.txt for Third Gear Innovators
+# Last updated: January 30, 2024
+
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /whatwedo.html
+Allow: /program.html
+Allow: /cohort-6-8.html
+Allow: /cohort-9-11.html
+Allow: /cohort-12-13.html
+Allow: /faq.html
+Allow: /contact.html
+Allow: /donate.html
+
+# Sitemap location
+Sitemap: https://thirdgearinnovators.org/sitemap.xml
+
+# Disallow crawling of admin and system files
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+
+# Crawl-delay for aggressive crawlers
+Crawl-delay: 10
