@@ -18,13 +18,6 @@
 		<meta property="og:description" content="Hands-on STEM education through kit car building for kids ages 6-13. Join our 9-month program and inspire the next generation of innovators." />
 		<meta property="og:image" content="https://thirdgearinnovators.org/images/program-overview.png" />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://thirdgearinnovators.org/program" />
-		<meta property="twitter:title" content="9-Month STEM Program for Kids (Ages 6-13)" />
-		<meta property="twitter:description" content="Hands-on STEM education through kit car building for kids ages 6-13. Join our 9-month program and inspire the next generation of innovators." />
-		<meta property="twitter:image" content="https://thirdgearinnovators.org/images/program-overview.png" />
-
 		<!-- Technical Meta Tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -38,6 +31,72 @@
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Structured Data (Schema.org) -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "EducationalOrganization",
+		  "@id": "https://thirdgearinnovators.org/program#educationalOrganization",
+		  "name": "Third Gear Innovators",
+		  "url": "https://thirdgearinnovators.org/program",
+		  "description": "Hands-on STEM education program for kids ages 6-13 through kit car building and engineering projects.",
+		  "foundingDate": "2023",
+		  "founder": {
+		    "@type": "Organization",
+		    "name": "Third Gear Innovators"
+		  },
+		  "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "STEM Programs",
+		    "itemListElement": [
+		      {
+		        "@type": "EducationalProgram",
+		        "name": "Ages 6-8: Young Engineers Program",
+		        "description": "Introduction to engineering concepts through hands-on kit car building and basic mechanics.",
+		        "programPrerequisites": "No prior experience required. Designed for children ages 6-8.",
+		        "educationalProgramMode": "In-person with take-home kits",
+		        "timeToComplete": "P9M",
+		        "educationalCredentialAwarded": "Certificate of Completion"
+		      },
+		      {
+		        "@type": "EducationalProgram",
+		        "name": "Ages 9-11: Junior Innovators Program",
+		        "description": "Intermediate program focusing on engineering, basic electronics, and problem-solving with kit cars.",
+		        "programPrerequisites": "Basic understanding of tools and building concepts. For ages 9-11.",
+		        "educationalProgramMode": "In-person with take-home kits",
+		        "timeToComplete": "P9M",
+		        "educationalCredentialAwarded": "Certificate of Completion"
+		      },
+		      {
+		        "@type": "EducationalProgram",
+		        "name": "Ages 12-13: Advanced Makers Program",
+		        "description": "Advanced program covering engineering principles, electronics, and coding with kit cars.",
+		        "programPrerequisites": "Experience with basic tools and building. For ages 12-13.",
+		        "educationalProgramMode": "In-person with take-home kits",
+		        "timeToComplete": "P9M",
+		        "educationalCredentialAwarded": "Certificate of Completion"
+		      }
+		    ]
+		  },
+		  "location": {
+		    "@type": "Place",
+		    "name": "Carnation, WA",
+		    "address": {
+		      "@type": "PostalAddress",
+		      "addressLocality": "Carnation",
+		      "addressRegion": "WA",
+		      "postalCode": "98014",
+		      "addressCountry": "US"
+		    }
+		  },
+		  "sameAs": [
+		    "https://www.youtube.com/channel/UCUgUU2q5v2UQAETQw01RhQQ",
+		    "https://www.instagram.com/thirdgearinnovators/",
+		    "https://github.com/ThirdGearInnovators/"
+		  ]
+		}
+		</script>
 	</head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-936D628E55"></script>
@@ -193,6 +252,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- BreadcrumbList Schema -->
+			<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "BreadcrumbList",
+			  "itemListElement": [
+			    {
+			      "@type": "ListItem",
+			      "position": 1,
+			      "name": "Home",
+			      "item": "https://thirdgearinnovators.org/"
+			    },
+			    {
+			      "@type": "ListItem",
+			      "position": 2,
+			      "name": "Program",
+			      "item": "https://thirdgearinnovators.org/program"
+			    }
+			  ]
+			}
+			</script>
 
 	</body>
 </html>

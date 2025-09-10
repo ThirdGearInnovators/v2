@@ -18,13 +18,6 @@
 		<meta property="og:description" content="Inspiring the next generation of engineers through hands-on STEM education with kit cars and real-world engineering projects." />
 		<meta property="og:image" content="https://thirdgearinnovators.org/images/logo.png" />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://thirdgearinnovators.org/" />
-		<meta property="twitter:title" content="Third Gear Innovators | Hands-On STEM Education" />
-		<meta property="twitter:description" content="Inspiring the next generation of engineers through hands-on STEM education with kit cars and real-world engineering projects." />
-		<meta property="twitter:image" content="https://thirdgearinnovators.org/images/logo.png" />
-
 		<!-- Technical Meta Tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -41,6 +34,56 @@
 		
 		<!-- Third-party Scripts -->
 		<script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
+		
+		<!-- Structured Data (Schema.org) -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "@id": "https://thirdgearinnovators.org/#organization",
+		  "name": "Third Gear Innovators",
+		  "url": "https://thirdgearinnovators.org/",
+		  "logo": "https://thirdgearinnovators.org/images/logo.png",
+		  "description": "A 501(c)(3) nonprofit organization dedicated to inspiring the next generation through hands-on STEM education focused on kit cars and engineering.",
+		  "foundingDate": "2023",
+		  "sameAs": [
+		    "https://www.youtube.com/channel/UCUgUU2q5v2UQAETQw01RhQQ",
+		    "https://www.instagram.com/thirdgearinnovators/",
+		    "https://github.com/ThirdGearInnovators/"
+		  ],
+		  "address": {
+		    "@type": "PostalAddress",
+		    "addressLocality": "Carnation",
+		    "addressRegion": "WA",
+		    "postalCode": "98014",
+		    "addressCountry": "US"
+		  },
+		  "contactPoint": {
+		    "@type": "ContactPoint",
+		    "contactType": "Board of Directors",
+		    "email": "board@innovate3.org"
+		  }
+		}
+		</script>
+		
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebSite",
+		  "@id": "https://thirdgearinnovators.org/#website",
+		  "name": "Third Gear Innovators",
+		  "url": "https://thirdgearinnovators.org/",
+		  "description": "Hands-on STEM education through kit cars and engineering projects for youth.",
+		  "publisher": {
+		    "@id": "https://thirdgearinnovators.org/#organization"
+		  },
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "https://thirdgearinnovators.org/search?q={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
 	</head>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-936D628E55"></script>
@@ -227,5 +270,18 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<!-- BreadcrumbList Schema -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+		    "@type": "ListItem",
+		    "position": 1,
+		    "name": "Home",
+		    "item": "https://thirdgearinnovators.org/"
+		  }]
+		}
+		</script>
 	</body>
 </html>

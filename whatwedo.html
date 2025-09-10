@@ -18,13 +18,6 @@
 		<meta property="og:description" content="See how we're inspiring the next generation of engineers through hands-on STEM education with our innovative kit car programs and workshops." />
 		<meta property="og:image" content="https://thirdgearinnovators.org/images/logo.png" />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://thirdgearinnovators.org/whatwedo" />
-		<meta property="twitter:title" content="What We Do | Hands-On STEM Education" />
-		<meta property="twitter:description" content="See how we're inspiring the next generation of engineers through hands-on STEM education with our innovative kit car programs and workshops." />
-		<meta property="twitter:image" content="https://thirdgearinnovators.org/images/logo.png" />
-
 		<!-- Technical Meta Tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -38,6 +31,73 @@
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Structured Data (Schema.org) -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "ItemList",
+		  "itemListElement": [
+		    {
+		      "@type": "Service",
+		      "position": 1,
+		      "name": "Hands-On Workshops",
+		      "description": "Students assemble and modify kit cars, learning mechanical systems, electrical & electronics, and design & customization through practical experience.",
+		      "provider": {
+		        "@type": "NGO",
+		        "name": "Third Gear Innovators",
+		        "url": "https://thirdgearinnovators.org"
+		      },
+		      "audience": {
+		        "@type": "Audience",
+		        "audienceType": "Students interested in STEM and engineering"
+		      },
+		      "offers": {
+		        "@type": "Offer",
+		        "category": "Educational workshop"
+		      }
+		    },
+		    {
+		      "@type": "Service",
+		      "position": 2,
+		      "name": "STEM Outreach & Education",
+		      "description": "Partnerships with schools and community centers to bring hands-on engineering experiences to students through demonstrations and classroom visits.",
+		      "provider": {
+		        "@type": "NGO",
+		        "name": "Third Gear Innovators",
+		        "url": "https://thirdgearinnovators.org"
+		      },
+		      "audience": {
+		        "@type": "Audience",
+		        "audienceType": "Schools and educational institutions"
+		      },
+		      "offers": {
+		        "@type": "Offer",
+		        "category": "Educational program"
+		      }
+		    },
+		    {
+		      "@type": "Service",
+		      "position": 3,
+		      "name": "Mentorship & Career Pathways",
+		      "description": "Connecting students with industry professionals for guidance on STEM careers, internships, and scholarship opportunities in engineering fields.",
+		      "provider": {
+		        "@type": "NGO",
+		        "name": "Third Gear Innovators",
+		        "url": "https://thirdgearinnovators.org"
+		      },
+		      "audience": {
+		        "@type": "Audience",
+		        "audienceType": "Students pursuing STEM careers"
+		      },
+		      "offers": {
+		        "@type": "Offer",
+		        "category": "Mentorship program"
+		      }
+		    }
+		  ]
+		}
+		</script>
 	</head>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-936D628E55"></script>
@@ -185,6 +245,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- BreadcrumbList Schema -->
+			<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "BreadcrumbList",
+			  "itemListElement": [
+			    {
+			      "@type": "ListItem",
+			      "position": 1,
+			      "name": "Home",
+			      "item": "https://thirdgearinnovators.org/"
+			    },
+			    {
+			      "@type": "ListItem",
+			      "position": 2,
+			      "name": "What We Do",
+			      "item": "https://thirdgearinnovators.org/whatwedo"
+			    }
+			  ]
+			}
+			</script>
 
 	</body>
 </html>
